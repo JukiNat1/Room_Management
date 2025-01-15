@@ -204,7 +204,7 @@ if (!isset($_SESSION['Login'])) {
 
 
                 <a class="NOnavbar-brand" href="#">
-                    <img id="logo" src="..\Webcontent\img\core-img\logo.png" alt="Talk Fusion">
+                    <img id="logo" src="..\Webcontent\img\core-img\logo_HPC.png" alt="Talk Fusion">
                 </a>
 
             </div>
