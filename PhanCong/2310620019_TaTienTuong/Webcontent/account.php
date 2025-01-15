@@ -16,7 +16,7 @@ $thongTin = $taiKhoanDao->GetThongTin($tenTaiKhoan);
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Phòng trọ sinh viên</title>
+    <title>Thuê - Cho Thuê Phòng Trọ</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/icon.ico">

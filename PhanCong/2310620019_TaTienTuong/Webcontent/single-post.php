@@ -194,6 +194,9 @@ $choTuQuan = $phongTro->ChoTuQuan == 1 ? ' - tự quản' : '';
                     </div>
                 </div>
 
+                <!-- Sidebar Widget -->
+                <?php include_once './side-bar-newest-post.php'; ?>
+
             </div>
         </div>
     </section>

@@ -9,7 +9,7 @@
 /**
  * Description of TienNghi
  *
- * @author 
+ * @author
  */
 class TienNghi
 {
