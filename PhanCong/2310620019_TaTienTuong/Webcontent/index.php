@@ -25,7 +25,7 @@ setlocale(LC_MONETARY, "vie");
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>QUẢN LÝ PHÒNG TRỌ</title>
+    <title>Phòng trọ sinh viên</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/icon.ico">
@@ -81,6 +81,9 @@ setlocale(LC_MONETARY, "vie");
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </section>

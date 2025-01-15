@@ -9,7 +9,7 @@
 /**
  * Description of KhuVuc
  *
- * @author tung
+ * @author 
  */
 class KhuVuc
 {

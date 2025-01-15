@@ -9,7 +9,7 @@
 /**
  * Description of BaiDang
  *
- * @author tam
+ * @author 
  */
 class BaiDang
 {

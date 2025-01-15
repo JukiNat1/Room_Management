@@ -9,7 +9,7 @@
 /**
  * Description of MoiTruong
  *
- * @author tung
+ * @author
  */
 class MoiTruong
 {

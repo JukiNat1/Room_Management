@@ -9,7 +9,7 @@
 /**
  * Description of DanhSachMoiTruong
  *
- * @author tung
+ * @author 
  */
 class DanhSachMoiTruong
 {

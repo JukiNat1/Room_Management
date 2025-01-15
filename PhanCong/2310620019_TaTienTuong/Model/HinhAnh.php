@@ -9,7 +9,7 @@
 /**
  * Description of HinhAnh
  *
- * @author tung
+ * @author 
  */
 class HinhAnh
 {

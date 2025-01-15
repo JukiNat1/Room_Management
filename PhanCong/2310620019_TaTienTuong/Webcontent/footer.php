@@ -2,7 +2,7 @@
 <footer class="footer-area">
     <!-- Footer Logo -->
     <div class="footer-logo mb-100">
-        <a href="index.php"><img src="img/core-img/hpc.png" alt=""></a>
+        <a href="index.php"><img src="img/core-img/logo.png" alt=""></a>
     </div>
     <!-- Footer Content -->
     <div class="container">
