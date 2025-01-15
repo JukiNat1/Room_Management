@@ -77,7 +77,7 @@ setlocale(LC_MONETARY, "vie");
                     <div class='sidebar-area'>
                         <!-- Newsletter Widget -->
                         <div class='single-widget-area newsletter-widget mb-30'>
-                            <img src="img/core-img/ezgif.com-loop-count.gif" alt="https://www.pinterest.com/pin/672514156854731562/" >
+                            <a href="https://www.youtube.com/@truongcaoangcongnghebachkh9439" title="Nguồn ảnh GIF: https://www.pinterest.com/pin/672514156854731562/"><img src="img/core-img/ezgif.com-loop-count.gif" alt=""></a>
                         </div>
                     </div>
                 </div>

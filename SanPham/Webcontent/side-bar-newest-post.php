@@ -6,9 +6,7 @@
 
             <!-- Newsletter Widget -->
             <div class="single-widget-area newsletter-widget mb-30">
-                <h4>Chưa có tài khoản ?</h4>
-                <a href="sign-up.php" class="btn newsbox-btn w-100">Đăng ký ngay</a>
-                <p class="mt-30">Đăng ký để đăng bài và xem nhiều hơn</p>
+                  <a href="https://www.youtube.com/@truongcaoangcongnghebachkh9439" title="Nguồn ảnh GIF: https://www.pinterest.com/pin/672514156854731562/"><img src="img/core-img/ezgif.com-loop-count.gif" alt=""></a>
             </div>
         </div>
 
