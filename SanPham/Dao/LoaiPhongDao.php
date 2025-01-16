@@ -10,7 +10,7 @@ class LoaiPhongDao
 
     public function getLoaiPhong()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -31,7 +31,7 @@ class LoaiPhongDao
 
     public function getTenLoaiPhong($MaLoaiPhong)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = '';

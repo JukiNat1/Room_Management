@@ -6,11 +6,7 @@
  * and open the template in the editor.
  */
 
-/**
- * Description of TienNghi
- *
- * @author tung
- */
+
 class TienNghi
 {
     var $MaTienNghi;
@@ -22,5 +18,5 @@ class TienNghi
         $this->TenTienNghi = $TenTienNghi;
     }
 
-    //put your code here
+   
 }

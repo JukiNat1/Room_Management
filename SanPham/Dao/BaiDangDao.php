@@ -12,7 +12,7 @@ class BaiDangDao
 
     function danhSachBaiDang($tenTaiKhoan)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $rs = array();
         $i = 0;
@@ -40,7 +40,7 @@ class BaiDangDao
 
     function topMoiNhat()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $rs = array();
         $i = 0;
@@ -67,7 +67,7 @@ class BaiDangDao
 
     function topGiaReNhat()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $list = array();
         $i = 0;
@@ -96,7 +96,7 @@ class BaiDangDao
 
     function topXemNhieuNhat()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $list = array();
         $i = 0;
@@ -123,7 +123,7 @@ class BaiDangDao
 
     function tinTrongThang()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -152,7 +152,7 @@ class BaiDangDao
 
     function capNhatLuotXem($maBaiDang)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $sql = "UPDATE BaiDang SET LuotXem = LuotXem + 1 WHERE MaBaiDang = ?";
@@ -165,7 +165,7 @@ class BaiDangDao
 
     function getThongTin($maBaiDang)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $hinhAnh = new HinhAnhDao();
         $sql = "SELECT ViewBaiDang.*, BaiDang.MoTa "
@@ -190,7 +190,7 @@ class BaiDangDao
 
     function luuBaiDang($TieuDe, $ThoiGianDang, $MoTa, $TenTaiKhoan)
     {
-        $link = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $link = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($link, 'utf8');
 
         $sql = "INSERT INTO `BaiDang`(`TieuDe`, `ThoiGianDang`, `MoTa`, `LuotXem`, `TenTaiKhoan`, `TrangThai`) "
@@ -208,7 +208,7 @@ class BaiDangDao
     {
         /* @var $stmt mysqli_stmt */
         /* @var $result mysqli_result */
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $sql = "SELECT MAX(BaiDang.MaBaiDang) FROM BaiDang WHERE TenTaiKhoan = '{$TenTaiKhoan}'";
@@ -226,7 +226,7 @@ class BaiDangDao
     public function TimKiem($MaLoaiPhong, $ChoTuQuan, $MaKhuVuc, $TuKhoa)
     {
         $rs = array();
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $sql = "SELECT ViewBaiDang.*, BaiDang.LuotXem, BaiDang.MoTa FROM ViewBaiDang
             JOIN PhongTro ON ViewBaiDang.MaBaiDang = PhongTro.MaBaiDang

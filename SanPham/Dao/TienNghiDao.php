@@ -11,7 +11,7 @@ class TienNghiDao
 
     function getTienNghi()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -38,7 +38,7 @@ class TienNghiDao
 
             . "                WHERE DanhSachTienNghi.MaPhong = {$maPhong}";
 
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -58,7 +58,7 @@ class TienNghiDao
 
     public function luuTienNghi($MaPhong, $MaTienNghi)
     {
-        $link = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $link = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($link, 'utf8');
 
         $sql = "INSERT INTO `DanhSachTienNghi`(`MaTienNghi`, `MaPhong`) "

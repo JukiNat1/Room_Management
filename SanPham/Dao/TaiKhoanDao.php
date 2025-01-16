@@ -8,7 +8,7 @@ class TaiKhoanDao
     //put your code here
     function AddTaiKhoan($TenTaiKhoan, $MatKhau, $MaLoaiTaiKhoan, $HoTen, $Sdt, $GioiTinh)
     {
-        $connection = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connection = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connection, 'utf8');
         if ($connection->connect_error) {
             die('kết nối không thành công ' . $connection->connect_error);
@@ -34,7 +34,7 @@ class TaiKhoanDao
 
     function UpdateTaiKhoan($TenTaiKhoan, $HoTen, $Sdt, $GioiTinh)
     {
-        $connection = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connection = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connection, 'utf8');
         if ($connection->connect_error) {
             die('kết nối không thành công ' . $connection->connect_error);
@@ -52,7 +52,7 @@ class TaiKhoanDao
     
     function ChangePassword($TenTaiKhoan, $Password, $Newpass)
     {
-        $connection = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connection = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connection, 'utf8');
         if ($connection->connect_error) {
             die('kết nối không thành công ' . $connection->connect_error);
@@ -69,7 +69,7 @@ class TaiKhoanDao
 
     function GetTaiKhoan($TenTaiKhoan, $MatKhau, $MaLoaiTaiKhoan)
     {
-        $connection = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connection = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connection, 'utf8');
         if ($connection->connect_error) {
             die('Kết nối không thành công: ' . $connection->connect_error);
@@ -94,7 +94,7 @@ class TaiKhoanDao
     }
     function GetThongTin($TenTaiKhoan)
     {
-        $connection = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connection = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connection, 'utf8');
         if ($connection->connect_error) {
             die('Kết nối không thành công: ' . $connection->connect_error);

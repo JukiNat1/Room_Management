@@ -12,7 +12,7 @@ class HinhAnhDao
 
     function getAnhDaiDien($maBaiDang)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $sql = "SELECT DuongDan FROM HinhAnh WHERE MaBaiDang = '{$maBaiDang}' LIMIT 1";
@@ -29,7 +29,7 @@ class HinhAnhDao
 
     function getListAnh($maBaiDang)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $rs = array();
         $i = 0;
@@ -49,7 +49,7 @@ class HinhAnhDao
 
     public function luuHinhAnh($DuongDan, $MaBaiDang)
     {
-        $link = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $link = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($link, 'utf8');
 
         $sql = 'INSERT INTO `HinhAnh`(`DuongDan`, `MaBaiDang`) VALUES(?,?)';
@@ -61,7 +61,7 @@ class HinhAnhDao
 
     public function maxMaHinhAnh()
     {
-        $link = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $link = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($link, 'utf8');
 
         $sql = 'SELECT MAX(MaHinhAnh) FROM HinhAnh';

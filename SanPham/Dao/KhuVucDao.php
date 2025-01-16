@@ -10,7 +10,7 @@ class KhuVucDao
 
     public function getKhuVuc()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -31,7 +31,7 @@ class KhuVucDao
 
     public function getTenKhuVuc($MaKhuVuc)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = '';

@@ -11,7 +11,7 @@ class PhongTroDao
 
     public function getThongTin($maPhong)
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
         $sql = "SELECT PhongTro.*, KhuVuc.TenKhuVuc, QuanHuyen.TenQuanHuyen, LoaiPhong.TenLoaiPhong "
             . "FROM quanhuyen,PhongTro "
@@ -32,7 +32,7 @@ class PhongTroDao
     public function luuThongTin($SoLuongPhong, $SoPhongTrong, $SoNguoiToiDa, $GiaPhong, $DienTich, $ChoTuQuan, $MaLoaiPhong, $MaKhuVuc, $MaBaiDang)
     {
 
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $sql = "INSERT INTO `PhongTro`"
@@ -58,7 +58,7 @@ class PhongTroDao
     {
         /* @var $stmt mysqli_stmt */
         /* @var $result mysqli_result */
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $sql = "SELECT PhongTro.MaPhong FROM `PhongTro` WHERE MaBaiDang = {$MaBaiDang}";

@@ -10,7 +10,7 @@ class MoiTruongDao
 
     public function getMoiTruong()
     {
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -35,7 +35,7 @@ class MoiTruongDao
             . "JOIN MoiTruong ON DanhSachMoiTruong.MaMoiTruong = MoiTruong.MaMoiTruong "
             . "WHERE DanhSachMoiTruong.MaPhong = {$maPhong}";
 
-        $connect = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $connect = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($connect, 'utf8');
 
         $rs = array();
@@ -55,7 +55,7 @@ class MoiTruongDao
 
     public function luuMoiTruong($MaPhong, $MaMoiTruong)
     {
-        $link = mysqli_connect('localhost', 'root', '', 'PhongTroSinhVien');
+        $link = mysqli_connect('localhost', 'root', '', 'phongtrosinhvien');
         mysqli_set_charset($link, 'utf8');
 
         $sql = "INSERT INTO `DanhSachMoiTruong`(`MaMoiTruong`, `MaPhong`) "
